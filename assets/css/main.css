@@ -71,6 +71,19 @@ input, select, textarea {
 	appearance: none;
 }
 
+.button1 {
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	background-color: rgb(201, 118, 9);
+	border-radius: 12px;
+}
 
 .centrado{
 	position: absolute;
