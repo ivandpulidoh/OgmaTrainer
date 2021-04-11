@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>OgmaTrainner</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body>
+
+		<!-- Main -->
+			<div id="main">
+                <div class="navbar">
+					<ul>
+						<li><a href="#" class="fas fa-arrow-left"></a></li>
+						<li><a href="#">Rutinas</a></li>
+						<li><a href="#">Explorar</a></li>
+						<li><a href="index.html">Maquinas</a></li>
+						<li><a href="Login.html">Cuenta</a></li>												
+					</ul>
+				</div>
+
+                <header id="header1">
+                    <br>
+                    <h1>Registrar Datos😁</h1>
+                    <p>Formulario para actualizar o registrar información personal🥵</p>
+                </header>
+
+                <form class="formulario">
+                    <img id="imagenPrevisualizacion" width="200" height="120">
+                    <label class="custom-file-upload">
+                        <input type="file" id="seleccionArchivos" accept="image/*">  
+                        <p>Seleccionar Imagen</p>
+                    </label><br>                                                                       
+
+                    <label for="fname">Nombres:</label>
+                    <input type="text" id="nombre" name="nombre" value="Nombre">
+
+                     <label for="fname">Numero de identificación:</label>
+                    <input type="text" id="numeroIdenti" name="numeroIdenti" value="Cedula">
+
+                     <label for="fname">Edad:</label>
+                    <input type="text" id="nombre" name="nombre" value="Edad">
+
+                     <label for="fname">Correo Electronico:</label>
+                    <input type="email" id="correo" name="correo" value="Correo Electronico">
+
+                    <label for="fname">Genero:</label>
+                    <input type="text" id="genero" name="genero" value="Genero">
+
+                    <label for="fname">Contraseña:</label>
+                    <input type="password" id="password" name="password" value="Contraseña">
+
+                    <label for="fname">Comfirmar Contraseña:</label>
+                    <input type="password" id="passwordConfirmed" name="passwordComfirmed" value="Comfirmar Contraseña" onclick="scrollFunction()">
+                    <br>
+                    <br>
+
+                    <button type="button" class="button2" id="btn_guardar">Guardar</button>
+                </form>
+            </div>
+
+            <script src="assets/js/viewerImg.js"></script>
+
+            <script>
+                //Get the button
+                var mybutton = document.getElementById("btn_guardar");
+
+                function scrollFunction() {
+                    mybutton.style.display = "block";
+                }
+                
+            </script>
+            
+    </body>
+</html>
