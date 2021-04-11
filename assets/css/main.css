@@ -85,6 +85,7 @@ input, select, textarea {
 	border-radius: 12px;
 }
 
+<<<<<<< HEAD
 .button2 {
 	display: none;
   	position: fixed;
@@ -101,6 +102,8 @@ input, select, textarea {
   	border-radius: 12px;
 }
 
+=======
+>>>>>>> 3733fc96763b4309bc0c5756b1b88e14ceb2009b
 .centrado{
 	position: absolute;
 	top: 80%;
