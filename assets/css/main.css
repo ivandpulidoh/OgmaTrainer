@@ -200,7 +200,9 @@ input[type="file"] {
 	color: white;
 }
 
-
+.logofont h1{
+	color: #1942C3;
+}
 /* Basic */
 
 	/*
@@ -1065,7 +1067,7 @@ input[type="file"] {
 			font-weight: 700;
 		}
 	#header1 {
-		padding: 10px 10px 10px 10px ;
+		padding: 10px 10px 10px 2px ;
 	}
 
 		#header1 h1 {
