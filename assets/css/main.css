@@ -85,6 +85,20 @@ input, select, textarea {
 	border-radius: 12px;
 }
 
+#button1{
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	background-color: rgb(201, 118, 9);
+	border-radius: 12px
+}
+
 .button2 {
 	display: none;
   	position: fixed;
@@ -213,6 +227,147 @@ input[type="file"] {
 	right: 0;
 	background-color: rgba(0,0,0,0.6);
 }
+
+.zoomPic {
+	width: 3px;
+	height: 1px;
+
+	-webkit-transition: all 2.5s ease-in-out;
+	-moz-transition: all 2.5s ease-in-out;
+	-ms-transition: all 2.5s ease-in-out;
+	-o-transition: all 2.5s ease-in-out;
+	transition: all 2.5s ease-in-out;
+  }
+
+  .zoomPic button{
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	background-color: rgb(201, 118, 9);
+	border-radius: 12px;
+  }
+  
+  .zoomPic label{
+	color: white;
+  }
+
+  .zoomPic.zoom {
+	width: 300px !important;
+	height: 300px !important;
+  }
+
+ .cardRutina{
+	 position: relative;
+ }
+
+ .cardRutina img{
+	width: 300px;
+	height: 150px;
+	border-radius: 10%;
+  }
+
+  .cardRutina:before{	
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 9px;
+	left: 28.5px;
+	right: 28.5px;
+	border-radius: 10%;
+	background-color: rgba(0,0,0,0.6)
+  }
+
+  .cardRutina h1{
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 18px;
+  }
+
+  .itemsGif{
+	position: relative;    
+    text-align: left;
+	padding-left: 25px;
+	background-color: white;
+  }
+
+  .itemsGif img{
+	width: 150px;
+	height: 100px;
+  }
+
+  .itemsGif p{
+	position: absolute;
+    top: 50%;
+	left: 70%;
+    text-align: left;
+    transform: translate(-50%, -50%);
+  }
+
+.itemDay{	
+	display: block;
+  	bottom: 5px;
+  	left: 30%;
+  	z-index: 99;
+  	font-size: 12px;
+  	border: none;
+  	outline: none;
+  	background-color: rgb(201, 118, 9);
+  	color: white;
+  	cursor: pointer;
+  	padding: 10px;
+  	border-radius: 5px;	
+}
+
+.itemDay h2{
+	font-size: 1.25em;
+	font-weight: 700;	
+	text-align: center;
+}		
+
+.navbar-days ul{
+	list-style-type: none;	
+	top: 0;
+	width: 100%;
+	margin: 0;
+	padding: 10px;
+	overflow: hidden;
+	background-color: white;	  
+}
+
+.navbar-days li{
+	float: left;
+}
+
+#maquinas-oscuras:before{
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 9px;
+	left: 28.5px;
+	right: 28.5px;
+	border-radius: 10%;
+	background-color: rgba(0,0,0,0.6)
+}
+
+#start{
+	font-family: "Roboto", Helvetica, sans-serif;
+	font-weight: 400;
+	line-height: 1.65;
+	font-size: 1em;
+	color: #aaa;
+	background-color: transparent;
+}
+
+
 /* Basic */
 
 	/*
@@ -1120,7 +1275,7 @@ input[type="file"] {
 		flex-wrap: wrap;
 		padding: 0 0.75em;
 	}
-
+	
 		#thumbnails article {/* parte de imagenes pequeñas  */
 			position: relative;
 			width: 50%;
@@ -1137,9 +1292,9 @@ input[type="file"] {
 			}
 
 				#thumbnails article .thumbnail img {
-					display: block;
-					width: 100%;
-					
+					display: block;					
+					width: 169px;
+					height: 105px;
 				}
 
 				#thumbnails article .thumbnail:before {
@@ -1164,7 +1319,7 @@ input[type="file"] {
 				}
 
 			#thumbnails article h2, #thumbnails article p {
-				display: none;
+				display: none;				
 			}
 
 			#thumbnails article.active .thumbnail:before {
@@ -1512,7 +1667,7 @@ input[type="file"] {
 			}
 
 			.container-1 input#search{
-				width: 320px;
+				width: 293px;
 				height: 40px;
 				background: #F7F5F2;
 				border: none;
