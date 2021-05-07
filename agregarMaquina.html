@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>OgmaTrainner</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body>
+
+		<!-- Main -->
+			<div id="main">
+                <div class="navbar">
+					<ul>
+						<li><a href="IniciarSesion.html" class="fas fa-arrow-left"></a></li>
+						<li><a href="Rutinas.html">Rutinas</a></li>
+						<li><a href="Explorar.html">Explorar</a></li>
+						<li><a href="index.html">Maquinas</a></li>
+						<li><a href="RegistrarDatos.html">Cuenta</a></li>												
+					</ul>
+				</div>
+
+                <header id="header1">
+                    <br>
+                    <h1>Agregar Maquina😁</h1>
+                    <p>Formulario para agregar una nueva maquina al GYM🥵</p>
+                </header>
+                				
+				<button onclick="enableExistMachine()">Nuevo/Existente</button>
+				<label>Puto</label>                
+
+				<div id="component-exist-machine">
+					<form >			
+						<label>Seleccione la maquina</label>			
+						<select name="OS">
+							<option value="1">Windows Vista</option> 
+							<option value="2">Windows 7</option> 
+							<option value="3">Windows XP</option>
+							<option value="10">Fedora</option> 
+							<option value="11">Debian</option> 
+							<option value="12">Suse</option> 
+						 </select>
+						 <label>Nueva Cantidad</label>
+						 <input type="text" value="5">	
+						 <label>Fecha</label>
+						 <input type="text" value="5">					 
+						 <br><button type="button">Guardar</button>
+					</form>
+				</div>
+
+				<div id="component-add-machine">
+					<form>						
+						<label>Ingrese nombre</label>
+						<input type="text" value="Ingrese nombre">
+
+						<label>Ingrese fabricante</label>
+						<input type="text" value="Ingrese fabricante">
+
+						<label>Es nueva?</label>
+						<input type="text" value="Es nueva?">
+
+						<label>Cantidad</label>
+						<input type="text" value="Cantidad">
+						
+					</form>
+				</div>
+            </div>
+			<!--<script src="assets/js/ocultarComponente.js"></script>-->
+			<script>
+				var addMachine = document.getElementById("component-add-machine");
+				var existMachine = document.getElementById("component-exist-machine");
+
+				function enableExistMachine() {
+					if(addMachine.style.display == "block"){
+						addMachine.style.display = "none";
+						existMachine.style.display = "block";                                       
+					}else{						
+						addMachine.style.display = "block";
+						existMachine.style.display = "none";
+					}					
+				}				
+			</script>
+    </body>
+</html>

@@ -368,6 +368,90 @@ input[type="file"] {
 }
 
 
+.btn_calendar{
+	background-image: url("images/calendario.svg");		
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	/*background-size: cover; Resize the background image to cover the entire container */
+
+	display: block;
+  	position: fixed;
+  	top: 45px;
+  	right: 5px;
+  	z-index: 99;
+  	font-size: 18px;
+  	border: none;
+  	outline: none;
+  	background-color:#aaa;
+  	color: white;
+  	cursor: pointer;
+  	padding: 20px;
+}
+
+.btn_agregar_maquina{
+	background-image: url("images/addNote.svg");		
+	background-position: center; 
+	background-repeat: no-repeat; 
+	display: block;
+  	position: fixed;
+  	top: 88px;
+  	right: 5px;
+  	z-index: 99;
+  	font-size: 18px;
+  	border: none;
+  	outline: none;
+  	background-color:#aaa;
+  	color: white;
+  	cursor: pointer;
+  	padding: 20px;
+}
+
+#component-add-machine{
+	display: block;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: white;
+	color: #ccc;
+	cursor: pointer;
+	padding: 15px;	
+  	margin: 15px;
+	border-radius: 12px;
+}
+
+#component-exist-machine{
+	display: none;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: white;
+	color: #ccc;
+	cursor: pointer;
+	padding: 15px;	
+  	margin: 15px;
+	border-radius: 12px;
+}
+
+
+#component-exist-machine  input{
+	height: 2.2em;	
+}
+
+#component-exist-machine  select{
+	height: 2.2em;	
+}
+
+#component-add-machine input{
+	height: 2.2em;
+}
+
+#component-exist-machine button{
+	background-color: rgb(201, 118, 9);
+	color: white;
+}
+
 /* Basic */
 
 	/*
