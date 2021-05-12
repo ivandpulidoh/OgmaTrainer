@@ -370,10 +370,8 @@ input[type="file"] {
 
 .btn_calendar{
 	background-image: url("images/calendario.svg");		
-	background-position: center; /* Center the image */
-	background-repeat: no-repeat; /* Do not repeat the image */
-	/*background-size: cover; Resize the background image to cover the entire container */
-
+	background-position: center; 
+	background-repeat: no-repeat; 
 	display: block;
   	position: fixed;
   	top: 45px;
@@ -394,8 +392,80 @@ input[type="file"] {
 	background-repeat: no-repeat; 
 	display: block;
   	position: fixed;
+  	top: 131px;
+  	right: 5px;
+  	z-index: 99;
+  	font-size: 18px;
+  	border: none;
+  	outline: none;
+  	background-color:#aaa;
+  	color: white;
+  	cursor: pointer;
+  	padding: 20px;
+}
+
+.btn_exportar{
+	background-image: url("images/exportar.svg");		
+	background-position: center; 
+	background-repeat: no-repeat; 
+	display: block;
+  	position: fixed;
+  	top: 45px;
+  	right: 5px;
+  	z-index: 99;
+  	font-size: 18px;
+  	border: none;
+  	outline: none;
+  	background-color:#aaa;
+  	color: white;
+  	cursor: pointer;
+  	padding: 20px;
+}
+
+.btn_notificacion{
+	background-image: url("images/campana-de-notificacion.svg");		
+	background-position: center; 
+	background-repeat: no-repeat; 
+	display: block;
+  	position: fixed;
   	top: 88px;
   	right: 5px;
+  	z-index: 99;
+  	font-size: 18px;
+  	border: none;
+  	outline: none;
+  	background-color:#aaa;
+  	color: white;
+  	cursor: pointer;
+  	padding: 20px;
+}
+
+.btn_codigo_qr{
+	background-image: url("images/codigo-qr.svg");		
+	background-position: center; 
+	background-repeat: no-repeat; 
+	display: block;
+  	position: relative;
+  	bottom: 1150px;
+  	left: 316px;
+  	z-index: 99;
+  	font-size: 18px;
+  	border: none;
+  	outline: none;
+  	background-color:#aaa;
+  	color: white;
+  	cursor: pointer;
+  	padding: 20px;
+}
+
+.btn_premium{
+	background-image: url("images/servicio-premium.svg");		
+	background-position: center; 
+	background-repeat: no-repeat; 
+	display: block;
+  	position: relative;
+  	bottom: 1100px;
+  	left: 316px;
   	z-index: 99;
   	font-size: 18px;
   	border: none;

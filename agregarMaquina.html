@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 	</head>
 	<body>
 
@@ -52,20 +53,28 @@
 				<div id="component-add-machine">
 					<form>						
 						<label>Ingrese nombre</label>
-						<input type="text" value="Ingrese nombre">
+						<input type="text" id="nombreM" value="Ingrese nombre">
 
 						<label>Ingrese fabricante</label>
-						<input type="text" value="Ingrese fabricante">
+						<input type="text" id="fabricanteM" value="Ingrese fabricante">
 
 						<label>Es nueva?</label>
-						<input type="text" value="Es nueva?">
+						<input type="text" id="esNuevaM" value="Es nueva?">
 
 						<label>Cantidad</label>
-						<input type="text" value="Cantidad">
-						<br><button type="button" class="button1">Guardar</button>
+						<input type="text" id="cantidadM" value="Cantidad">
+
+						<label>Desscripcion</label>
+						<input type="text" id="descripcionM" value="Descripcion">
+
+						<label>Links img</label>
+						<input type="text" id="linkImgM" value="Link IMG">
+						<br><button id="btn_save" type="button" class="button1">Guardar</button>
 					</form>
 				</div>
             </div>
+
+
 			<!--<script src="assets/js/ocultarComponente.js"></script>-->
 			<script>
 				var addMachine = document.getElementById("component-add-machine");
@@ -81,5 +90,20 @@
 					}					
 				}				
 			</script>
+
+
+ <!--FIREBASE-->                
+        <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-app.js"></script>
+
+        <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+        <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-analytics.js"></script>
+
+        <!-- Add Firebase products that you want to use -->
+        <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-firestore.js"></script>
+
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="assets/js/firebase.js"></script>
     </body>
 </html>
