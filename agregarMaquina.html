@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>OgmaTrainner</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+	</head>
+	<body>
+
+		<!-- Main -->
+			<div id="main">
+                <div class="navbar">
+					<ul>
+						<li><a href="javascript:history.back()" class="fas fa-arrow-left"></a></li>
+						<li><a href="Rutinas.html">Rutinas</a></li>
+						<li><a href="Explorar.html">Explorar</a></li>
+						<li><a href="index.html">Maquinas</a></li>
+						<li><a href="RegistrarDatos.html">Cuenta</a></li>												
+					</ul>
+				</div>
+
+                <header id="header1">
+                    <br>
+                    <h1>Agregar Maquina💖</h1>
+                    <p>Formulario para agregar una nueva maquina al GYM</p>
+                </header>
+                				
+				<button onclick="enableExistMachine()">Nuevo/Existente</button>
+
+				<div id="component-exist-machine">
+					<form >			
+						<label>Seleccione la maquina</label>			
+						<select name="OS">
+							<option value="1">Banco Press</option> 
+							<option value="2">Barra de Dominaciones</option> 
+							<option value="3">Banda</option>
+							<option value="10">Bicicleta</option> 
+							<option value="11">Cinta para correr</option> 
+							<option value="12">Dorsales</option>
+							<option value="13">Kettlebell</option>
+							<option value="14">Prensa de piernas</option>
+							<option value="15">Maquina de piernas</option>
+							<option value="16">Eliptica</option>
+							<option value="17">Pony</option>
+							<option value="18">Mancuernas</option>
+						 </select>
+						 <label>Nueva Cantidad</label>
+						 <input type="text" value="5">	
+						 <label>Fecha</label>
+						 <input type="date" value="">					 
+						 <br><button type="button" class="button1">Actualizar</button>
+					</form>
+				</div>
+
+				<div id="component-add-machine">
+					<form>						
+						<label>Ingrese nombre</label>
+						<input type="text" id="nombreM" value="Ingrese nombre">
+
+						<label>Ingrese fabricante</label>
+						<input type="text" id="fabricanteM" value="Ingrese fabricante">
+
+						<label>Es nueva?</label>
+						<input type="text" id="esNuevaM" value="Es nueva?">
+
+						<label>Cantidad</label>
+						<input type="text" id="cantidadM" value="Cantidad">
+
+						<label>Desscripcion</label>
+						<input type="text" id="descripcionM" value="Descripcion">
+
+						<label>Links img</label>
+						<input type="text" id="linkImgM" value="Link IMG">
+						<br><button id="btn_save" type="button" class="button1">Guardar</button>
+					</form>
+				</div>
+            </div>
+
+
+			<!--<script src="assets/js/ocultarComponente.js"></script>-->
+			<script>
+				var addMachine = document.getElementById("component-add-machine");
+				var existMachine = document.getElementById("component-exist-machine");
+
+				function enableExistMachine() {
+					if(addMachine.style.display == "block"){
+						addMachine.style.display = "none";
+						existMachine.style.display = "block";                                       
+					}else{						
+						addMachine.style.display = "block";
+						existMachine.style.display = "none";
+					}					
+				}				
+			</script>
+
+
+ <!--FIREBASE-->                
+        <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-app.js"></script>
+
+        <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+        <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-analytics.js"></script>
+
+        <!-- Add Firebase products that you want to use -->
+        <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-firestore.js"></script>
+
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="assets/js/firebase.js"></script>
+    </body>
+</html>
