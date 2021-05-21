@@ -28,13 +28,12 @@
                     <p>Formulario para agregar una nueva maquina al GYM</p>
                 </header>
                 				
-				<button onclick="enableExistMachine()">Nuevo/Existente</button>
-				<label>Puto</label>                
+				<button onclick="enableExistMachine()">Nuevo/Existente</button>             
 
 				<div id="component-exist-machine">
 					<form >			
 						<label>Seleccione la maquina</label>			
-						<select name="OS">
+						<select name="catalogo-maquinas" id="catalogo-maquinas">
 							<option value="1">Windows Vista</option> 
 							<option value="2">Windows 7</option> 
 							<option value="3">Windows XP</option>
@@ -64,7 +63,7 @@
 						<label>Cantidad</label>
 						<input type="text" id="cantidadM" value="Cantidad">
 
-						<label>Desscripcion</label>
+						<label>Descripcion</label>
 						<input type="text" id="descripcionM" value="Descripcion">
 
 						<label>Links img</label>

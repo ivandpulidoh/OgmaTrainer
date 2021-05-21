@@ -35,7 +35,7 @@ var config = {
     Swal.fire(
         'Existoso!!',
         'Datos guardados correctamente',
-        'success'        
+        'success'         
       )
   }
 
@@ -68,4 +68,21 @@ var config = {
 
     SaveMachine(machine);
   })
+  
 
+  //llenar la lista desplegable
+
+  var selected_item = document.getElementById('catalogo-maquinas');//Se llama el selected
+  selected_item.innerHTML = '';
+  selected_item.innerHTML += `
+          <option value="0" selected>Seleccione</option>
+          ` //Agrego un option por default
+  db.collection("maquinas").onSnapshot((querySnapshot) => { //Se llaman los datos
+          querySnapshot.forEach((doc) => {          
+          console.log(`${doc.id} => ${doc.data().maquina.nombre}`);
+          selected_item.innerHTML += `
+          <option value="${doc.id}">${doc.data().maquina.nombre}</option> . 
+          ` //Aquí agrego los options de acuerdo a la base de datos.
+          console.log('se agrego el catalago');
+      });
+  });
