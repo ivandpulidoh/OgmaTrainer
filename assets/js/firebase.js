@@ -78,11 +78,12 @@ var config = {
           <option value="0" selected>Seleccione</option>
           ` //Agrego un option por default
   db.collection("maquinas").onSnapshot((querySnapshot) => { //Se llaman los datos
-          querySnapshot.forEach((doc) => {          
-          console.log(`${doc.id} => ${doc.data().maquina.nombre}`);
+          querySnapshot.forEach((doc) => {                    
+          $("#catalogo-maquinas").find("option[value='"+`${doc.id}`+"']").remove();                    
           selected_item.innerHTML += `
           <option value="${doc.id}">${doc.data().maquina.nombre}</option> . 
-          ` //Aquí agrego los options de acuerdo a la base de datos.
-          console.log('se agrego el catalago');
+          ` //Aquí agrego los options de acuerdo a la base de datos.          
+          console.log(`${doc.data().maquina.nombre}`);
       });
+      console.log('catalogo agregado correctamente');
   });
